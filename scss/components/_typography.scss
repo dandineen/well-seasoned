@@ -1,0 +1,52 @@
+// Type sizes
+/*
+-----------------------------
+Open Sans
+-----------------------------
+- Light 300
+- Light 300 Italic
+- Regular 400
+- regualr 400 italic
+- Semi-bold 600
+- Semi-bold 600 italic
+- Bold 700
+- Bold 700 italic
+- Extra-bold 800
+- Extra-bold 800 italic
+
+-----------------------------
+Open Sans Condensed
+-----------------------------
+- Light 300
+- Light 300 italic
+- Bold 700
+*/
+
+
+// Type variable
+$bodycopy: 'Open Sans', sans-serif;
+$headings: 'Open Sans Condensed', sans-serif;
+
+body {
+    font-family: $bodycopy;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+// Headings
+h1 {
+    color: $coral;
+}
+
+.splash-header {
+    font-family: $headings;
+    color: black;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 72px;
+
+    span {
+        font-weight: 700;
+        display: block;
+    }
+}

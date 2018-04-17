@@ -1,0 +1,23 @@
+// SITE HEADER
+
+.site-header {
+    display: flex;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 10px;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

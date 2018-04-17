@@ -1,0 +1,74 @@
+/*
+-----------------------------
+Open Sans
+-----------------------------
+- Light 300
+- Light 300 Italic
+- Regular 400
+- regualr 400 italic
+- Semi-bold 600
+- Semi-bold 600 italic
+- Bold 700
+- Bold 700 italic
+- Extra-bold 800
+- Extra-bold 800 italic
+
+-----------------------------
+Open Sans Condensed
+-----------------------------
+- Light 300
+- Light 300 italic
+- Bold 700
+*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+h1 {
+  color: #eb5757; }
+
+.splash-header {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: black;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 72px; }
+  .splash-header span {
+    font-weight: 700;
+    display: block; }
+
+main {
+  padding: 100px 20px 20px; }
+
+.fifty {
+  width: 50%; }
+
+.site-header {
+  display: flex;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  .site-header h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-size: 24px; }
+  .site-header h2 {
+    font-size: 14px;
+    font-weight: 400; }
+
+nav ul {
+  list-style: none; }
+
+.global-nav li {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=spice.css.map */

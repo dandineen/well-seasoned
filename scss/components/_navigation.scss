@@ -1,0 +1,15 @@
+// NAVIGATION
+
+// Zero lists in nav items
+nav ul {
+    list-style: none;
+}
+
+
+.global-nav li {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+}
