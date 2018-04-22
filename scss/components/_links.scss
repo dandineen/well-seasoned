@@ -1,0 +1,21 @@
+// LINKS
+
+nav a {
+    &:link {
+        text-decoration: none;
+        color: $coral;
+    }
+
+    &:visited {
+
+    }
+
+    &:hover,
+    &:active {
+
+    }
+
+    &:focus {
+
+    }
+}

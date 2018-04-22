@@ -2,22 +2,40 @@
 
 .site-header {
     display: flex;
-    height: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 100px;
     background-color: white;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 40px);
+    padding: 20px;
+    border-bottom: 1px solid black;
 
     h1 {
         text-transform: uppercase;
         font-weight: 300;
         letter-spacing: 10px;
         font-size: 24px;
+        line-height: 24px;
+        margin: 0 0 5px;
     }
 
     h2 {
         font-size: 14px;
+        line-height: 14px;
         font-weight: 400;
+        margin: 0;
+    }
+}
+
+.header-info {
+    width: 100%;
+    text-align: center;
+
+    @media #{$medium-up} {
+        width: 50%;
+        text-align: left;
     }
 }

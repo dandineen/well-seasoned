@@ -1,10 +1,22 @@
 // NAVIGATION
 
+nav {
+    width: 100%;
+    text-align: center;
+
+    @media #{$medium-up} {
+        width: 50%;
+        text-align: right;
+    }
+}
+
 // Zero lists in nav items
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    // text-align: right;
 }
-
 
 .global-nav li {
     display: inline-block;

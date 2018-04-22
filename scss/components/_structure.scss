@@ -1,14 +1,52 @@
-// SITE STRUCTURE
+// Karyx - Well seasoned
+// 2018 - Dan Dineen
+
+// Spacing
+$v-space: 1em;
+$h-space: 1em;
+
+// BREAKPOINTS
+// Mobile
+$mobile-upper: 480px;
+// Small - Phablets & small tablets
+$small-lower: $mobile-upper + 1;
+$small-upper: 640px;
+// Standard tablets & small laptops
+$medium-lower: $small-upper + 1;
+$medium-upper: 1000px;
+// Laptop and desktop
+$large-lower: $medium-upper + 1;
+
+// MEDIA QUERIES
+// Target screens less than 480px
+$mobile-only: "(min-width: 0) and (max-width: #{$mobile-upper})";
+// Target screens between 481px and 640px
+$small-only: "(min-width: #{$small-lower}) and (max-width: #{$small-upper})";
+$small-up: "(min-width: #{$small-lower})";
+// Target screens between 641px and 1000px
+$medium-only: "(min-width: #{$medium-lower}) and (max-width: #{$medium-upper})";
+$medium-up: "(min-width: #{$medium-lower})";
+// Target screens 1000px +
+$large-up: "(min-width: #{$large-lower})";
+
+// ELEMENT RULES
 
 body {
     background: url(../images/chilli.png) no-repeat top right transparent;
+    margin: 0;
+    padding: 0;
 }
 
 
 main {
-    padding: 100px 20px 20px;
+    padding: 100px 20px;
+    height: calc(1vh);
 }
 
 .fifty {
-    width: 50%;
+    width: 100%;
+
+    @media #{$medium-up} {
+        width: 50%;
+    }
 }
