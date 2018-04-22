@@ -11,7 +11,7 @@ nav {
 }
 
 .global-nav {
-    margin: $v-space / 2 $h-space;
+    margin: 0 $h-space;
 
     @media #{$medium-up} {
         margin: 0;
@@ -28,7 +28,7 @@ nav ul {
 .global-nav li {
     display: inline-block;
     margin: 0 10px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
     

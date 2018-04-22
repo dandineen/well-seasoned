@@ -32,15 +32,36 @@ $large-up: "(min-width: #{$large-lower})";
 // ELEMENT RULES
 
 body {
-    background: url(../images/chilli.png) no-repeat top right transparent;
     margin: 0;
     padding: 0;
 }
 
+// Body classes
+.home {
+    background: url(../images/coriander.png) no-repeat center right, url(../images/triangle-test.svg) no-repeat top center;
+}
 
+.about {
+    background: url(../images/scotch-bonnet.png) no-repeat center right, url(../images/about-bg.svg) no-repeat top center;
+}
+
+.work {
+    background: url(../images/work-bg.svg) no-repeat top center;
+}
+
+.cv {
+    background: url(../images/cv-bg.svg) no-repeat top center;
+}
+
+// STRUCTURAL
 main {
-    padding: 100px 20px;
-    height: calc(1vh);
+    padding: 120px 40px;
+    // height: calc(1vh);
+    height: 100%;
+
+    @media #{$medium-up} {
+        padding: 140px 40px;
+    }
 }
 
 .fifty {

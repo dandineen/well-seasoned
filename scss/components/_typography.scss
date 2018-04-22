@@ -6,19 +6,19 @@ Open Sans
 - Light 300
 - Light 300 Italic
 - Regular 400
-- regualr 400 italic
+- Regular 400 Italic
 - Semi-bold 600
-- Semi-bold 600 italic
+- Semi-bold 600 Italic
 - Bold 700
-- Bold 700 italic
+- Bold 700 Italic
 - Extra-bold 800
-- Extra-bold 800 italic
+- Extra-bold 800 Italic
 
 -----------------------------
 Open Sans Condensed
 -----------------------------
 - Light 300
-- Light 300 italic
+- Light 300 Italic
 - Bold 700
 */
 
@@ -31,22 +31,39 @@ body {
     font-family: $bodycopy;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 300;
 }
 
 // Headings
 h1 {
+    // font-family: $headings;
     color: $coral;
 }
 
+// The main page header
 .splash-header {
-    font-family: $headings;
     color: black;
     font-weight: 300;
-    font-size: 64px;
-    line-height: 72px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
 
     span {
-        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
         display: block;
+        color: $coral;
+        text-transform: uppercase;
+        font-weight: 800;
+
+        @media #{$medium-up} {
+            font-size: 44px;
+            line-height: 56px;
+        }
+    }
+
+    @media #{$medium-up} {
+        font-size: 36px;
+        line-height: 44px;
     }
 }
