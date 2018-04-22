@@ -10,12 +10,19 @@ nav {
     }
 }
 
+.global-nav {
+    margin: $v-space / 2 $h-space;
+
+    @media #{$medium-up} {
+        margin: 0;
+    }
+}
+
 // Zero lists in nav items
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    // text-align: right;
 }
 
 .global-nav li {
@@ -23,5 +30,11 @@ nav ul {
     margin: 0 10px;
     font-weight: 300;
     font-size: 16px;
-    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    &::before {
+        content: "/";
+        color: rgba(0, 0, 0, .2);
+        padding-right: 5px; 
+    }
 }

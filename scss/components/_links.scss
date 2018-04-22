@@ -7,15 +7,16 @@ nav a {
     }
 
     &:visited {
-
+        color: $fresh;
     }
 
     &:hover,
     &:active {
-
+        color: black;
+        border-bottom: 2px solid black;
     }
 
     &:focus {
-
+        border-bottom: 2px solid $coral;
     }
 }
