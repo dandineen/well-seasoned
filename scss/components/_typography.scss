@@ -20,12 +20,19 @@ Open Sans Condensed
 - Light 300
 - Light 300 Italic
 - Bold 700
+
+-----------------------------
+Zilla Slab
+-----------------------------
+- Regular 400
+- Regular 400 Italic
+- Bold 700
 */
 
 
 // Type variable
-$bodycopy: 'Open Sans', sans-serif;
-$headings: 'Open Sans Condensed', sans-serif;
+$bodycopy: 'Zilla Slab', sans-serif;
+$headings: 'Open Sans', sans-serif;
 
 body {
     font-family: $bodycopy;
@@ -36,7 +43,7 @@ body {
 
 // Headings
 h1 {
-    // font-family: $headings;
+    font-family: $headings;
     color: $coral;
 }
 
