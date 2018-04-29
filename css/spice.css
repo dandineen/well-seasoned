@@ -31,6 +31,18 @@ main {
     .fifty {
       width: 50%; } }
 
+.one-hundred {
+  width: 100%;
+  flex: 1; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1; }
+
 /*
 -----------------------------
 Open Sans
@@ -102,6 +114,18 @@ nav a:hover, nav a:active {
   border-bottom: 2px solid black; }
 nav a:focus {
   border-bottom: 2px solid #eb5757; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    margin-bottom: 5px;
+    margin-left: -10px; }
+    ul li::before {
+      content: "\2013";
+      color: red;
+      padding-right: 5px; }
 
 .header-wrapper {
   background-color: white;

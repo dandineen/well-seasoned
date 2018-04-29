@@ -70,10 +70,29 @@ main {
     }
 }
 
+//  Fifty percent (50%) width column
 .fifty {
     width: 100%;
 
     @media #{$medium-up} {
         width: 50%;
     }
+}
+
+// One hundred (100%) percent column
+.one-hundred {
+    width: 100%;
+    flex: 1;
+}
+
+// Get the sticky footer to work
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+main {
+    flex: 1;
 }
