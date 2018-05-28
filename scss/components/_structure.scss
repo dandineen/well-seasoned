@@ -37,41 +37,55 @@ $max-site-width: 1200px;
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 // Body classes
 .home {
-    background: url(../images/triangle-test.svg) no-repeat top center;
+    background: url(../images/home-bg.svg) no-repeat top center;
 }
 
 .about {
-    background: url(../images/scotch-bonnet.png) no-repeat center right, url(../images/about-bg.svg) no-repeat top center;
+    background: url(../images/about-bg.svg) no-repeat top center;
 }
 
 .work {
     background: url(../images/work-bg.svg) no-repeat top center;
 }
 
-.cv {
-    background: url(../images/cv-bg.svg) no-repeat top center;
+.contact {
+    background: url(../images/contact-bg.svg) no-repeat top center;
 }
 
 // STRUCTURAL
 main {
-    padding: 120px 40px;
+    padding: 25vh 40px 15vh;
     height: 100%;
     display: flex;
     margin: 0 auto;
     width: calc(100% - (40px * 2));
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
 
     @media #{$medium-up} {
         max-width: calc(#{$max-site-width} - (40px * 2));
-        padding: 140px 40px;
+    }
+}
+
+// Thirds (33%) width column
+.third {
+    width: 100%;
+
+    @media #{$medium-up} {
+        width: 33%;
     }
 }
 
 //  Fifty percent (50%) width column
-.fifty {
+.half {
     width: 100%;
 
     @media #{$medium-up} {
@@ -79,20 +93,41 @@ main {
     }
 }
 
-// One hundred (100%) percent column
-.one-hundred {
+// Two-thirds (66%) width column
+.two-thirds {
     width: 100%;
-    flex: 1;
+
+    @media #{$medium-up} {
+        width: 66%;
+    }
 }
 
-// Get the sticky footer to work
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+// One hundred (100%) percent column
+.full-width {
+    width: 100%;
 }
-  
-main {
-    flex: 1;
+
+// Horizontal rules
+.mini-hr {
+    border: 3px solid black;
+    width: 10%;
+    margin: $v-space * 2 0;
+
+    &.coral {
+        border-color: $coral;
+    }
+
+    &.fresh {
+        border-color: $fresh;
+    }
+
+    &.ocean {
+        border-color: $ocean;
+    }
+}
+
+.micro-hr {
+    border: 1px solid black;
+    width: 10%;
+    margin: $v-space * 2 0 $v-space;
 }

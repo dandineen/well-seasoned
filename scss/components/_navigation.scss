@@ -11,11 +11,7 @@ nav {
 }
 
 .global-nav {
-    margin: 0 $h-space;
-
-    @media #{$medium-up} {
-        margin: 0;
-    }
+    margin: 0;
 }
 
 // Zero lists in nav items
@@ -31,10 +27,15 @@ nav ul {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
+    line-height: 40px;
     
     &::before {
         content: "/";
         color: rgba(0, 0, 0, .2);
         padding-right: 5px; 
+    }
+
+    @media #{medium-up}{
+        line-height: auto;
     }
 }

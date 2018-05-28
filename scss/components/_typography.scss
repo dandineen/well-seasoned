@@ -33,18 +33,31 @@ Zilla Slab
 // Type variable
 $bodycopy: 'Zilla Slab', sans-serif;
 $headings: 'Open Sans', sans-serif;
+$base-font-size: 18px;
 
+// Set the default body font
 body {
     font-family: $bodycopy;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
+    font-size: $base-font-size / 1.125;
+    line-height: $base-font-size * 1.2;
+    font-weight: 400;
+
+    @media #{$medium-up} {
+        font-size: $base-font-size;
+        line-height: $base-font-size * 1.5;
+    }
+}
+
+// Paragraphs
+p {
+    margin: 0 0 $v-space;
 }
 
 // Headings
 h1 {
     font-family: $headings;
     color: $coral;
+    margin-top: 0;
 }
 
 // The main page header
@@ -55,22 +68,60 @@ h1 {
     line-height: 32px;
     letter-spacing: 1px;
 
-    span {
-        font-size: 36px;
-        line-height: 44px;
-        display: block;
-        color: $coral;
-        text-transform: uppercase;
-        font-weight: 800;
-
-        @media #{$medium-up} {
-            font-size: 44px;
-            line-height: 56px;
-        }
-    }
-
     @media #{$medium-up} {
         font-size: 36px;
         line-height: 44px;
     }
+
+    // The focus heading
+    span {
+        font-size: 32px;
+        line-height: 40px;
+        display: block;
+        color: $coral;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: $v-space / 2;
+
+        @media #{$medium-up} {
+            font-size: 48px;
+            line-height: 52px;
+        }
+    }
+}
+
+strong {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: $base-font-size * 1.5;
+    line-height: $base-font-size * 2;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: $base-font-size;
+    line-height: $base-font-size * 1.5;
+
+    @media #{$medium-up} {
+        font-size: $base-font-size * 1.333;
+        line-height: $base-font-size * 1.666;
+    }
+}
+
+h4 {
+    font-size: $base-font-size;
+    line-height: $base-font-size * 1.5;
+    font-family: $headings;
+    font-weight: normal;
+    margin: auto 0 $v-space / 2;
+}
+
+h1 + p {
+    font-style: italic;
+}
+
+p + h3 {
+    margin-top: $v-space * 2;
 }

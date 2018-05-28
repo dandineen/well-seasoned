@@ -1,5 +1,6 @@
 // SITE HEADER
 
+// Wrapper for the site header element
 .header-wrapper {
     background-color: white;
     width: 100%;
@@ -13,14 +14,18 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    max-height: 100px;
+    max-height: 25vh;
     background: white;
     width: calc(100% - (40px * 2));
-    padding: $v-space 40px;
+    padding: $v-space / 2 40px;
     max-width: calc(#{$max-site-width} - (40px * 2));
     margin: 0 auto;
 
-    h1 {
+    @media #{$medium-up}{
+        padding: $v-space 40px;
+    }
+
+    h1.site-name {
         font-family: $headings;
         text-transform: uppercase;
         font-weight: 400;
@@ -33,6 +38,12 @@
         a {
             color: $coral;
             text-decoration: none;
+            font-style: normal;
+
+            &:hover {
+                color: $fresh;
+                border: 0;
+            }
         }
 
         @media #{$medium-up} {
@@ -42,7 +53,7 @@
         }
     }
 
-    h2 {
+    h2.site-sub-name {
         font-family: $headings;
         font-size: 12px;
         line-height: 12px;

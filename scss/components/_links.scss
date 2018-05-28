@@ -1,22 +1,69 @@
 // LINKS
 
+// Navigation links
 nav a {
+    font-style: normal;
+    position: relative;
+
     &:link {
         text-decoration: none;
         color: $coral;
     }
 
+    // Build on the underlines from the left
+    // TODO: I'd like to set them to build on from the center once we're on smaller screens
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        transform-origin: 0;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
     &:visited {
-        color: $fresh;
+        color: black;
     }
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
         color: black;
-        border-bottom: 2px solid black;
+
+        &:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
     }
 
+    // Active navigation link
+    &.active {
+        color: $coral;
+    }
+}
+
+// Default links
+a {
+    font-style: italic;
+
+    &:link {
+        color: black;
+    }
+    &:visited {
+        color: fresh;
+    }
+
+    &:hover,
+    &:active,
     &:focus {
-        border-bottom: 2px solid $coral;
+        color: $coral;
     }
 }
