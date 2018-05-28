@@ -168,10 +168,12 @@ p + h3 {
 
 nav a {
   font-style: normal;
-  position: relative; }
+  position: relative;
+  border: 0; }
   nav a:link {
     text-decoration: none;
-    color: #eb5757; }
+    color: #eb5757;
+    border: 0; }
   nav a:before {
     content: "";
     position: absolute;
@@ -198,11 +200,11 @@ nav a {
     color: #eb5757; }
 
 a {
-  font-style: italic; }
-  a:link {
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 2px solid #eb5757; }
+  a:link, a:visited {
     color: black; }
-  a:visited {
-    color: fresh; }
   a:hover, a:active, a:focus {
     color: #eb5757; }
 
@@ -248,10 +250,10 @@ ul {
     .site-header h1.site-name a {
       color: #eb5757;
       text-decoration: none;
-      font-style: normal; }
+      font-style: normal;
+      border: 0; }
       .site-header h1.site-name a:hover {
-        color: #95c550;
-        border: 0; }
+        color: #95c550; }
     @media (min-width: 641px) {
       .site-header h1.site-name {
         font-size: 24px;

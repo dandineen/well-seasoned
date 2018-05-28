@@ -4,10 +4,12 @@
 nav a {
     font-style: normal;
     position: relative;
+    border: 0;
 
     &:link {
         text-decoration: none;
         color: $coral;
+        border: 0;
     }
 
     // Build on the underlines from the left
@@ -53,12 +55,12 @@ nav a {
 // Default links
 a {
     font-style: italic;
+    text-decoration: none;
+    border-bottom: 2px solid $coral;
 
-    &:link {
-        color: black;
-    }
+    &:link,
     &:visited {
-        color: fresh;
+        color: black;
     }
 
     &:hover,
