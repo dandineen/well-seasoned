@@ -44,7 +44,8 @@ body {
 
 // Body classes
 .home {
-    background: url(../images/home-bg.svg) no-repeat top center;
+    // background: url(../images/home-bg.svg) no-repeat top center;
+    background-color: rgba($fresh, .1);
 }
 
 .about {
@@ -52,16 +53,22 @@ body {
 }
 
 .work {
-    background: url(../images/work-bg.svg) no-repeat top center;
+    // background: url(../images/work-bg.svg) no-repeat top center;
+    background-color: rgba($hay, .1);
 }
 
 .contact {
-    background: url(../images/contact-bg.svg) no-repeat top center;
+    // background: url(../images/contact-bg.svg) no-repeat top center;
+    background-color: rgba($ocean, .1);
+
+    .headlines {
+        background-color: $ocean;
+    }
 }
 
 // STRUCTURAL
 main {
-    padding: 25vh 40px 15vh;
+    padding: 25vh 40px 10vh;
     height: 100%;
     display: flex;
     margin: 0 auto;
@@ -71,6 +78,7 @@ main {
     flex: 1;
 
     @media #{$medium-up} {
+        padding: 20vh 40px 10vh;
         max-width: calc(#{$max-site-width} - (40px * 2));
     }
 }
@@ -112,6 +120,10 @@ main {
     border: 3px solid black;
     width: 10%;
     margin: $v-space * 2 0;
+
+    @media #{$medium-up} {
+        margin: $v-space * 4 0;
+    }
 
     &.coral {
         border-color: $coral;

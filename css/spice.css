@@ -6,19 +6,21 @@ body {
   flex-direction: column; }
 
 .home {
-  background: url(../images/home-bg.svg) no-repeat top center; }
+  background-color: rgba(149, 197, 80, 0.1); }
 
 .about {
   background: url(../images/about-bg.svg) no-repeat top center; }
 
 .work {
-  background: url(../images/work-bg.svg) no-repeat top center; }
+  background-color: rgba(212, 194, 80, 0.1); }
 
 .contact {
-  background: url(../images/contact-bg.svg) no-repeat top center; }
+  background-color: rgba(86, 204, 242, 0.1); }
+  .contact .headlines {
+    background-color: #56ccf2; }
 
 main {
-  padding: 25vh 40px 15vh;
+  padding: 25vh 40px 10vh;
   height: 100%;
   display: flex;
   margin: 0 auto;
@@ -28,6 +30,7 @@ main {
   flex: 1; }
   @media (min-width: 641px) {
     main {
+      padding: 20vh 40px 10vh;
       max-width: calc(1200px - (40px * 2)); } }
 
 .third {
@@ -55,6 +58,9 @@ main {
   border: 3px solid black;
   width: 10%;
   margin: 2em 0; }
+  @media (min-width: 641px) {
+    .mini-hr {
+      margin: 4em 0; } }
   .mini-hr.coral {
     border-color: #eb5757; }
   .mini-hr.fresh {
@@ -232,7 +238,7 @@ ul {
   max-height: 25vh;
   background: white;
   width: calc(100% - (40px * 2));
-  padding: 0.5em 40px;
+  padding: 1em 40px 0.5em;
   max-width: calc(1200px - (40px * 2));
   margin: 0 auto; }
   @media (min-width: 641px) {

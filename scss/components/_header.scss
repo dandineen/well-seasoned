@@ -17,7 +17,7 @@
     max-height: 25vh;
     background: white;
     width: calc(100% - (40px * 2));
-    padding: $v-space / 2 40px;
+    padding: $v-space 40px $v-space / 2;
     max-width: calc(#{$max-site-width} - (40px * 2));
     margin: 0 auto;
 
