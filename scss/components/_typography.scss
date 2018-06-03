@@ -102,20 +102,32 @@ h2 {
 
 h3 {
     font-size: $base-font-size;
-    line-height: $base-font-size * 1.5;
+    line-height: $base-font-size * 1.333;
 
     @media #{$medium-up} {
         font-size: $base-font-size * 1.333;
         line-height: $base-font-size * 1.666;
     }
+
+    &.achievement::before {
+        content: "+";
+        color: $coral;
+        padding: 0 10px;
+        margin-left: -30px;
+    }
 }
 
 h4 {
-    font-size: $base-font-size;
-    line-height: $base-font-size * 1.5;
+    font-size: $base-font-size / 1.125;
+    line-height: $base-font-size * 1.2;
     font-family: $headings;
-    font-weight: normal;
+    font-weight: 700;
     margin: auto 0 $v-space / 2;
+
+    @media #{medium-up} {
+        font-size: $base-font-size;
+        line-height: $base-font-size * 1.5;
+    }
 }
 
 h1 + p {
@@ -126,6 +138,6 @@ p + h3 {
     margin-top: $v-space * 2;
 
     @media #{$medium-up} {
-        margin-top: $v-space * 6;
+        margin-top: $v-space * 4;
     }
 }
