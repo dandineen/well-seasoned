@@ -171,6 +171,9 @@ h1 + p {
 
 p + h3 {
   margin-top: 2em; }
+  @media (min-width: 641px) {
+    p + h3 {
+      margin-top: 6em; } }
 
 nav a {
   font-style: normal;
@@ -208,7 +211,8 @@ nav a {
 a {
   font-style: italic;
   text-decoration: none;
-  border-bottom: 2px solid #eb5757; }
+  border-bottom: 2px solid #eb5757;
+  transition: color 0.3s ease; }
   a:link, a:visited {
     color: black; }
   a:hover, a:active, a:focus {
@@ -218,10 +222,19 @@ ul, ol {
   margin: 0 0 2em;
   padding-left: 0; }
   ul li, ol li {
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.25em; }
 
 ul {
   list-style: circle; }
+
+dt {
+  font-weight: 600;
+  margin: 0 0 0.25em;
+  padding: 0; }
+
+dd {
+  margin: 0 0 1em;
+  padding: 0; }
 
 .header-wrapper {
   background-color: white;
