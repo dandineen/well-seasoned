@@ -2,11 +2,15 @@
 
 // General list spacing
 ul, ol {
-    margin: 0 0 $v-space * 2;
+    margin: 0 0 $v-space;
     padding-left: 0;
 
     li {
         margin-bottom: $v-space / 4;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 

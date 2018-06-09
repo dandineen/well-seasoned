@@ -30,12 +30,15 @@ Zilla Slab
 */
 
 
-// Type variable
+// TYPE VARIABLES
+
 $bodycopy: 'Zilla Slab', sans-serif;
 $headings: 'Open Sans', sans-serif;
 $base-font-size: 18px;
 
-// Set the default body font
+// TYPOGRAPHIC DEFAULTS
+
+// Body font
 body {
     font-family: $bodycopy;
     font-size: $base-font-size / 1.125;
@@ -53,14 +56,51 @@ p {
     margin: 0 0 $v-space;
 }
 
-// Headings
+// Strong emphasis
+strong {
+    font-weight: 700;
+}
+
+// STANDARD HEADINGS
+
 h1 {
     font-family: $headings;
     color: $coral;
     margin-top: 0;
 }
 
-// The main page header
+h2 {
+    font-size: $base-font-size * 1.5;
+    line-height: $base-font-size * 2;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: $base-font-size;
+    line-height: $base-font-size * 1.333;
+
+    @media #{$medium-up} {
+        font-size: $base-font-size * 1.333;
+        line-height: $base-font-size * 1.666;
+    }
+}
+
+h4 {
+    font-size: $base-font-size / 1.125;
+    line-height: $base-font-size * 1.2;
+    font-family: $headings;
+    font-weight: 700;
+    margin: auto 0 $v-space / 2;
+
+    @media #{$medium-up} {
+        font-size: $base-font-size;
+        line-height: $base-font-size * 1.5;
+    }
+}
+
+// SPECIAL HEADINGS
+
+// Page header
 .splash-header {
     color: black;
     font-weight: 300;
@@ -90,57 +130,27 @@ h1 {
     }
 }
 
-strong {
-    font-weight: 700;
+// Styling for portfolio achievment headings
+.achievement::before {
+    content: "+";
+    color: $coral;
+    padding: 0 10px;
+    margin-left: -30px;
 }
 
-h2 {
-    font-size: $base-font-size * 1.5;
-    line-height: $base-font-size * 2;
-    font-weight: normal;
-}
+// TYPOGRAPHIC COMBOS
 
-h3 {
-    font-size: $base-font-size;
-    line-height: $base-font-size * 1.333;
-
-    @media #{$medium-up} {
-        font-size: $base-font-size * 1.333;
-        line-height: $base-font-size * 1.666;
-    }
-
-    &.achievement::before {
-        content: "+";
-        color: $coral;
-        padding: 0 10px;
-        margin-left: -30px;
-    }
-}
-
-h4 {
-    font-size: $base-font-size / 1.125;
-    line-height: $base-font-size * 1.2;
-    font-family: $headings;
-    font-weight: 700;
-    margin: auto 0 $v-space / 2;
-
-    @media #{$medium-up} {
-        font-size: $base-font-size;
-        line-height: $base-font-size * 1.5;
-    }
-}
-
-// Italicise the first paragraph
+// Italicise the first paragraph after an H1 or HR
 h1 + p,
 hr + p {
     font-style: italic;
 }
 
-// Space out the headings
+// Space out sub-headings
 p + h3 {
-    margin-top: $v-space * 2;
+    margin-top: $v-space * 1.5;
 
     @media #{$medium-up} {
-        margin-top: $v-space * 4;
+        margin-top: $v-space * 3;
     }
 }

@@ -2,8 +2,8 @@
 // 2018 - Dan Dineen
 
 // Spacing
-$v-space: 1em;
-$h-space: 1em;
+$v-space: 1.125em;
+$h-space: 1.125em;
 
 // BREAKPOINTS
 // Mobile
@@ -66,7 +66,8 @@ body {
     }
 }
 
-// STRUCTURAL
+// DEFAULT STRUCTURE
+
 main {
     padding: 25vh 40px 10vh;
     height: 100%;
@@ -82,6 +83,8 @@ main {
         max-width: calc(#{$max-site-width} - (40px * 2));
     }
 }
+
+// GRID STRUCTURE
 
 // Thirds (33%) width column
 .third {
@@ -117,7 +120,7 @@ main {
 
 // Horizontal rules
 .mini-hr {
-    border: 3px solid black;
+    border: 4px solid black;
     width: 10%;
     margin: $v-space * 2 0;
 
@@ -139,7 +142,7 @@ main {
 }
 
 .micro-hr {
-    border: 1px solid black;
+    border: 2px dotted black;
     width: 10%;
     margin: $v-space * 2 0 $v-space;
 }
