@@ -36,13 +36,13 @@
         display: inline-block;
 
         a {
-            color: $coral;
+            color: black;
             text-decoration: none;
             font-style: normal;
             border: 0;
 
             &:hover {
-                color: $fresh;
+                color: $coral;
             }
         }
 
