@@ -19,6 +19,24 @@ ul {
     list-style: circle;
 }
 
+ul.link-list {
+    list-style: none;
+
+    li {
+        margin-left: -10px;
+    
+        &::before {
+            content: ">";
+            margin-left: -10px;
+            color: $coral;
+        }
+
+        a {
+            margin-left: 10px;
+        }
+    }
+}
+
 // Definition lists
 
 dt {

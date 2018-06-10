@@ -16,8 +16,6 @@ body {
 
 .contact {
   background-color: rgba(86, 204, 242, 0.1); }
-  .contact .headlines {
-    background-color: #56ccf2; }
 
 main {
   padding: 25vh 40px 10vh;
@@ -240,6 +238,17 @@ ul, ol {
 
 ul {
   list-style: circle; }
+
+ul.link-list {
+  list-style: none; }
+  ul.link-list li {
+    margin-left: -10px; }
+    ul.link-list li::before {
+      content: ">";
+      margin-left: -10px;
+      color: #eb5757; }
+    ul.link-list li a {
+      margin-left: 10px; }
 
 dt {
   font-weight: 600;

@@ -44,7 +44,6 @@ body {
 
 // Body classes
 .home {
-    // background: url(../images/home-bg.svg) no-repeat top center;
     background-color: rgba($fresh, .1);
 }
 
@@ -53,17 +52,11 @@ body {
 }
 
 .work {
-    // background: url(../images/work-bg.svg) no-repeat top center;
     background-color: rgba($hay, .1);
 }
 
 .contact {
-    // background: url(../images/contact-bg.svg) no-repeat top center;
     background-color: rgba($ocean, .1);
-
-    .headlines {
-        background-color: $ocean;
-    }
 }
 
 // DEFAULT STRUCTURE
