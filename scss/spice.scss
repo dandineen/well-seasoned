@@ -1,4 +1,7 @@
-// Sugar and spice
+/* ----------------------------------------------------------------
+MANIFEST - Import Sass partials and output as a single file 
+---------------------------------------------------------------- */
+
 @import "components/colours";
 @import "components/structure";
 @import "components/typography";
@@ -7,4 +10,3 @@
 @import "components/header";
 @import "components/navigation";
 @import "components/footer";
-@import "components/social";
