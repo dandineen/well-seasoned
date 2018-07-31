@@ -75,6 +75,10 @@ main {
     justify-content: space-between;
     flex: 1;
 
+    // IE10 Flexbox fallbacks
+    display: flexbox;
+    -ms-flex-pack: justify;
+
     @media #{$medium-up} {
         padding: 20vh 40px 10vh;
         max-width: calc(#{$max-site-width} - (40px * 2));
