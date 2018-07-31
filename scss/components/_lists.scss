@@ -1,0 +1,54 @@
+/* ----------------------------------------------------------------
+LISTS 
+---------------------------------------------------------------- */
+
+// General list spacing
+ul, ol {
+    margin: 0 0 $v-space;
+    padding-left: 0;
+
+    li {
+        margin-bottom: $v-space / 4;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Unordered list style
+ul {
+    list-style: circle;
+}
+
+ul.link-list {
+    list-style: none;
+
+    li {
+        margin-left: -10px;
+    
+        &::before {
+            content: ">";
+            margin-left: -10px;
+            color: $coral;
+        }
+
+        a {
+            margin-left: 10px;
+        }
+    }
+}
+
+// Definition lists
+
+dt {
+    font-weight: 600;
+    margin: 0 0 $v-space / 4;
+    padding: 0;
+}
+
+dd {
+    margin: 0 0 $v-space;
+    padding: 0;
+}
+

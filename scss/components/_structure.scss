@@ -1,0 +1,145 @@
+/* ----------------------------------------------------------------
+STRUCTURE - Grid, layout and structural elements 
+---------------------------------------------------------------- */
+
+// Karyx - Well seasoned
+// 2018 - Dan Dineen
+
+// Spacing
+$v-space: 1.125em;
+$h-space: 1.125em;
+
+// BREAKPOINTS
+// Mobile
+$mobile-upper: 480px;
+// Small - Phablets & small tablets
+$small-lower: $mobile-upper + 1;
+$small-upper: 640px;
+// Standard tablets & small laptops
+$medium-lower: $small-upper + 1;
+$medium-upper: 1000px;
+// Laptop and desktop
+$large-lower: $medium-upper + 1;
+
+// MEDIA QUERIES
+// Target screens less than 480px
+$mobile-only: "(min-width: 0) and (max-width: #{$mobile-upper})";
+// Target screens between 481px and 640px
+$small-only: "(min-width: #{$small-lower}) and (max-width: #{$small-upper})";
+$small-up: "(min-width: #{$small-lower})";
+// Target screens between 641px and 1000px
+$medium-only: "(min-width: #{$medium-lower}) and (max-width: #{$medium-upper})";
+$medium-up: "(min-width: #{$medium-lower})";
+// Target screens 1000px +
+$large-up: "(min-width: #{$large-lower})";
+
+// Maximum site width
+$max-site-width: 1200px;
+
+// ELEMENT RULES
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+// Body classes
+.home {
+    background-color: rgba($fresh, .1);
+}
+
+.about {
+    background: url(../images/about-bg.svg) no-repeat top center;
+}
+
+.work {
+    background-color: rgba($hay, .1);
+}
+
+.contact {
+    background-color: rgba($ocean, .1);
+}
+
+// DEFAULT STRUCTURE
+
+main {
+    padding: 25vh 40px 10vh;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    width: calc(100% - (40px * 2));
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+
+    @media #{$medium-up} {
+        padding: 20vh 40px 10vh;
+        max-width: calc(#{$max-site-width} - (40px * 2));
+    }
+}
+
+// GRID STRUCTURE
+
+// Thirds (33%) width column
+.third {
+    width: 100%;
+
+    @media #{$medium-up} {
+        width: 33%;
+    }
+}
+
+//  Fifty percent (50%) width column
+.half {
+    width: 100%;
+
+    @media #{$medium-up} {
+        width: 50%;
+    }
+}
+
+// Two-thirds (66%) width column
+.two-thirds {
+    width: 100%;
+
+    @media #{$medium-up} {
+        width: 66%;
+    }
+}
+
+// One hundred (100%) percent column
+.full-width {
+    width: 100%;
+}
+
+// Horizontal rules
+.mini-hr {
+    border: 4px solid black;
+    width: 10%;
+    margin: $v-space * 2 0;
+
+    @media #{$medium-up} {
+        margin: $v-space * 4 0;
+    }
+
+    &.coral {
+        border-color: $coral;
+    }
+
+    &.fresh {
+        border-color: $fresh;
+    }
+
+    &.ocean {
+        border-color: $ocean;
+    }
+}
+
+.micro-hr {
+    border: 2px dotted black;
+    width: 10%;
+    margin: $v-space * 2 0 $v-space;
+}

@@ -1,0 +1,159 @@
+/* ----------------------------------------------------------------
+TYPOGRAPHY
+---------------------------------------------------------------- */
+
+/*
+-----------------------------
+Open Sans
+-----------------------------
+- Light 300
+- Light 300 Italic
+- Regular 400
+- Regular 400 Italic
+- Semi-bold 600
+- Semi-bold 600 Italic
+- Bold 700
+- Bold 700 Italic
+- Extra-bold 800
+- Extra-bold 800 Italic
+
+-----------------------------
+Open Sans Condensed
+-----------------------------
+- Light 300
+- Light 300 Italic
+- Bold 700
+
+-----------------------------
+Zilla Slab
+-----------------------------
+- Regular 400
+- Regular 400 Italic
+- Bold 700
+*/
+
+
+// TYPE VARIABLES
+
+$bodycopy: 'Zilla Slab', sans-serif;
+$headings: 'Open Sans', sans-serif;
+$base-font-size: 18px;
+
+// TYPOGRAPHIC DEFAULTS
+
+// Body font
+body {
+    font-family: $bodycopy;
+    font-size: $base-font-size / 1.125;
+    line-height: $base-font-size * 1.2;
+    font-weight: 400;
+
+    @media #{$medium-up} {
+        font-size: $base-font-size;
+        line-height: $base-font-size * 1.5;
+    }
+}
+
+// Paragraphs
+p {
+    margin: 0 0 $v-space;
+}
+
+// Strong emphasis
+strong {
+    font-weight: 700;
+}
+
+// STANDARD HEADINGS
+
+h1 {
+    font-family: $headings;
+    color: $coral;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: $base-font-size * 1.5;
+    line-height: $base-font-size * 2;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: $base-font-size;
+    line-height: $base-font-size * 1.333;
+
+    @media #{$medium-up} {
+        font-size: $base-font-size * 1.333;
+        line-height: $base-font-size * 1.666;
+    }
+}
+
+h4 {
+    font-size: $base-font-size / 1.125;
+    line-height: $base-font-size * 1.2;
+    font-family: $headings;
+    font-weight: 700;
+    margin: auto 0 $v-space / 2;
+
+    @media #{$medium-up} {
+        font-size: $base-font-size;
+        line-height: $base-font-size * 1.5;
+    }
+}
+
+// SPECIAL HEADINGS
+
+// Page header
+.splash-header {
+    color: black;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+
+    @media #{$medium-up} {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    // The focus heading
+    span {
+        font-size: 32px;
+        line-height: 40px;
+        display: block;
+        color: $coral;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: $v-space / 2;
+
+        @media #{$medium-up} {
+            font-size: 48px;
+            line-height: 52px;
+        }
+    }
+}
+
+// Styling for portfolio achievment headings
+.achievement::before {
+    content: "+";
+    color: $coral;
+    padding: 0 10px;
+    margin-left: -30px;
+}
+
+// TYPOGRAPHIC COMBOS
+
+// Italicise the first paragraph after an H1 or HR
+h1 + p,
+hr + p {
+    font-style: italic;
+}
+
+// Space out sub-headings
+p + h3 {
+    margin-top: $v-space * 1.5;
+
+    @media #{$medium-up} {
+        margin-top: $v-space * 3;
+    }
+}
