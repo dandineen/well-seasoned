@@ -27,19 +27,19 @@ body {
   background-color: rgba(86, 204, 242, 0.1); }
 
 main {
-  padding: 25vh 40px 10vh;
+  padding: 160px 40px;
   height: 100%;
   display: flex;
   margin: 0 auto;
   width: calc(100% - (40px * 2));
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   flex: 1;
   display: flexbox;
   -ms-flex-pack: justify; }
   @media (min-width: 641px) {
     main {
-      padding: 20vh 40px 10vh;
+      padding: 120px 40px;
       max-width: calc(1200px - (40px * 2)); } }
 
 .third {
@@ -58,7 +58,10 @@ main {
   width: 100%; }
   @media (min-width: 641px) {
     .two-thirds {
-      width: 66%; } }
+      width: 84%; } }
+  @media (min-width: 1001px) {
+    .two-thirds {
+      width: 68%; } }
 
 .full-width {
   width: 100%; }
@@ -116,13 +119,9 @@ Zilla Slab
 */
 body {
   font-family: "Zilla Slab", sans-serif;
-  font-size: 16px;
-  line-height: 21.6px;
-  font-weight: 400; }
-  @media (min-width: 641px) {
-    body {
-      font-size: 18px;
-      line-height: 27px; } }
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5; }
 
 p {
   margin: 0 0 1.125em; }
@@ -131,47 +130,45 @@ strong {
   font-weight: 700; }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
   color: #eb5757;
+  font-family: "Open Sans", sans-serif;
   margin-top: 0; }
 
 h2 {
-  font-size: 27px;
-  line-height: 36px;
+  font-size: 1.6875em;
   font-weight: normal; }
 
 h3 {
-  font-size: 18px;
-  line-height: 23.994px; }
+  font-size: 1em;
+  line-height: 1.5; }
   @media (min-width: 641px) {
     h3 {
-      font-size: 23.994px;
-      line-height: 29.988px; } }
+      font-size: 1.5em;
+      line-height: 2; } }
 
 h4 {
-  font-size: 16px;
-  line-height: 21.6px;
   font-family: "Open Sans", sans-serif;
+  font-size: 1em;
   font-weight: 700;
+  line-height: 1.5;
   margin: auto 0 0.5625em; }
   @media (min-width: 641px) {
     h4 {
-      font-size: 18px;
-      line-height: 27px; } }
+      font-size: 1.125em; } }
 
 .splash-header {
   color: black;
   font-weight: 300;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5em;
+  line-height: 1.5;
   letter-spacing: 1px; }
   @media (min-width: 641px) {
     .splash-header {
-      font-size: 36px;
-      line-height: 44px; } }
+      font-size: 2em;
+      line-height: 1.5; } }
   .splash-header span {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 1.5em;
+    line-height: 1.2;
     display: block;
     color: #eb5757;
     text-transform: uppercase;
@@ -179,8 +176,7 @@ h4 {
     margin-bottom: 0.5625em; }
     @media (min-width: 641px) {
       .splash-header span {
-        font-size: 48px;
-        line-height: 52px; } }
+        font-size: 1.5em; } }
 
 .achievement::before {
   content: "+";
@@ -284,17 +280,16 @@ SITE HEADER
 ---------------------------------------------------------------- */
 .header-wrapper {
   background-color: white;
-  width: 100%;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0; }
+  width: 100%; }
 
 .site-header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  max-height: 25vh;
   background: white;
   width: calc(100% - (40px * 2));
   padding: 1.125em 40px 0.5625em;
