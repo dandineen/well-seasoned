@@ -22,6 +22,11 @@ SITE FOOTER
     letter-spacing: 1px;
     max-width: calc(#{$max-site-width} - (40px * 2));
     margin: 0 auto;
+
+    // IE10 Flexbox fallbacks
+    display: flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
 }
 
 .copyright {
