@@ -5,10 +5,10 @@ SITE HEADER
 // Wrapper for the site header element
 .header-wrapper {
     background-color: white;
-    width: 100%;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
+    width: 100%;
 }
 
 .site-header {
@@ -16,7 +16,7 @@ SITE HEADER
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    max-height: 25vh;
+    // max-height: 25vh;
     background: white;
     width: calc(100% - (40px * 2));
     padding: $v-space 40px $v-space / 2;

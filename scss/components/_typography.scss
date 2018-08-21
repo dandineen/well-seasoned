@@ -37,21 +37,16 @@ Zilla Slab
 
 $bodycopy: 'Zilla Slab', sans-serif;
 $headings: 'Open Sans', sans-serif;
-$base-font-size: 18px;
+// $base-font-size: 18px;
 
 // TYPOGRAPHIC DEFAULTS
 
 // Body font
 body {
     font-family: $bodycopy;
-    font-size: $base-font-size / 1.125;
-    line-height: $base-font-size * 1.2;
+    font-size: 1em;
     font-weight: 400;
-
-    @media #{$medium-up} {
-        font-size: $base-font-size;
-        line-height: $base-font-size * 1.5;
-    }
+    line-height: 1.5;
 }
 
 // Paragraphs
@@ -67,37 +62,35 @@ strong {
 // STANDARD HEADINGS
 
 h1 {
-    font-family: $headings;
     color: $coral;
+    font-family: $headings;
     margin-top: 0;
 }
 
 h2 {
-    font-size: $base-font-size * 1.5;
-    line-height: $base-font-size * 2;
+    font-size: 1.6875em;
     font-weight: normal;
 }
 
 h3 {
-    font-size: $base-font-size;
-    line-height: $base-font-size * 1.333;
+    font-size: 1em;
+    line-height: 1.5;
 
     @media #{$medium-up} {
-        font-size: $base-font-size * 1.333;
-        line-height: $base-font-size * 1.666;
+        font-size: 1.5em;
+        line-height: 2;
     }
 }
 
 h4 {
-    font-size: $base-font-size / 1.125;
-    line-height: $base-font-size * 1.2;
     font-family: $headings;
+    font-size: 1em;
     font-weight: 700;
+    line-height: 1.5;
     margin: auto 0 $v-space / 2;
 
     @media #{$medium-up} {
-        font-size: $base-font-size;
-        line-height: $base-font-size * 1.5;
+        font-size: 1.125em;
     }
 }
 
@@ -107,19 +100,19 @@ h4 {
 .splash-header {
     color: black;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5em;
+    line-height: 1.5;
     letter-spacing: 1px;
 
     @media #{$medium-up} {
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 2em;
+        line-height: 1.5;
     }
 
     // The focus heading
     span {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 1.5em;
+        line-height: 1.2;
         display: block;
         color: $coral;
         text-transform: uppercase;
@@ -127,8 +120,7 @@ h4 {
         margin-bottom: $v-space / 2;
 
         @media #{$medium-up} {
-            font-size: 48px;
-            line-height: 52px;
+            font-size: 1.5em;
         }
     }
 }

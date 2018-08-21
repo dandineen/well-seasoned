@@ -66,13 +66,13 @@ body {
 // DEFAULT STRUCTURE
 
 main {
-    padding: 25vh 40px 10vh;
+    padding: 160px 40px;
     height: 100%;
     display: flex;
     margin: 0 auto;
     width: calc(100% - (40px * 2));
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     flex: 1;
 
     // IE10 Flexbox fallbacks
@@ -80,7 +80,7 @@ main {
     -ms-flex-pack: justify;
 
     @media #{$medium-up} {
-        padding: 20vh 40px 10vh;
+        padding: 120px 40px;
         max-width: calc(#{$max-site-width} - (40px * 2));
     }
 }
@@ -105,12 +105,16 @@ main {
     }
 }
 
-// Two-thirds (66%) width column
+// Two-thirds width column
 .two-thirds {
     width: 100%;
 
     @media #{$medium-up} {
-        width: 66%;
+        width: 84%;
+    }
+
+    @media #{$large-up} {
+        width: 68%;
     }
 }
 
