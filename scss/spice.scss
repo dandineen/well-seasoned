@@ -2,11 +2,15 @@
 MANIFEST - Import Sass partials and output as a single file 
 ---------------------------------------------------------------- */
 
+// CORE STYLES
 @import "components/colours";
 @import "components/structure";
 @import "components/typography";
+
+// COMPONENTS
+@import "components/footer";
+@import "components/header";
 @import "components/links";
 @import "components/lists";
-@import "components/header";
 @import "components/navigation";
-@import "components/footer";
+@import "components/panels";

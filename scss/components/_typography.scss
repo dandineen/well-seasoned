@@ -37,7 +37,6 @@ Zilla Slab
 
 $bodycopy: 'Zilla Slab', sans-serif;
 $headings: 'Open Sans', sans-serif;
-// $base-font-size: 18px;
 
 // TYPOGRAPHIC DEFAULTS
 
@@ -68,17 +67,20 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6875em;
+    font-size: 1.25em;
+    font-style: italic;
     font-weight: normal;
+
+    @media #{$medium-up}{
+        font-size: 1.5em;
+    }
 }
 
 h3 {
     font-size: 1em;
-    line-height: 1.5;
 
     @media #{$medium-up} {
-        font-size: 1.5em;
-        line-height: 2;
+        font-size: 1.25em;
     }
 }
 

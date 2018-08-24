@@ -1,0 +1,15 @@
+/* ----------------------------------------------------------------
+PANELS - Boxouts for priority information 
+---------------------------------------------------------------- */
+
+// Base panel styling
+.panel {
+    background-color: white;
+    padding: 1em 2em;
+    border-left: .5em solid $ocean;
+    margin-bottom: $v-space * 2;
+
+    @media #{$medium-up}{
+        border-left-width: 1em;
+    }
+}

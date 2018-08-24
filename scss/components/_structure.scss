@@ -6,8 +6,8 @@ STRUCTURE - Grid, layout and structural elements
 // 2018 - Dan Dineen
 
 // Spacing
-$v-space: 1.125em;
-$h-space: 1.125em;
+$v-space: 1em;
+$h-space: 1em;
 
 // BREAKPOINTS
 // Mobile
@@ -66,11 +66,10 @@ body {
 // DEFAULT STRUCTURE
 
 main {
-    padding: 160px 40px;
+    padding: 10em 0 2.5em;
     height: 100%;
     display: flex;
     margin: 0 auto;
-    width: calc(100% - (40px * 2));
     flex-wrap: wrap;
     justify-content: center;
     flex: 1;
@@ -80,8 +79,7 @@ main {
     -ms-flex-pack: justify;
 
     @media #{$medium-up} {
-        padding: 120px 40px;
-        max-width: calc(#{$max-site-width} - (40px * 2));
+        padding: 8em 0 2em;
     }
 }
 
@@ -89,6 +87,7 @@ main {
 
 // Thirds (33%) width column
 .third {
+    padding: 0 40px;
     width: 100%;
 
     @media #{$medium-up} {
@@ -98,6 +97,7 @@ main {
 
 //  Fifty percent (50%) width column
 .half {
+    padding: 0 40px;
     width: 100%;
 
     @media #{$medium-up} {
@@ -107,20 +107,27 @@ main {
 
 // Two-thirds width column
 .two-thirds {
+    padding: 0 40px;
     width: 100%;
 
-    @media #{$medium-up} {
-        width: 84%;
+    @media #{$medium-only} {
+        width: 80%;
     }
 
     @media #{$large-up} {
-        width: 68%;
+        width: 70%;
     }
 }
 
 // One hundred (100%) percent column
 .full-width {
     width: 100%;
+}
+
+// A test class to see what we get from this
+.show-off {
+    background-color: $coral;
+    height: 30vh; // 30% of the viewport area
 }
 
 // Horizontal rules
@@ -130,7 +137,7 @@ main {
     margin: $v-space * 2 0;
 
     @media #{$medium-up} {
-        margin: $v-space * 4 0;
+        margin: $v-space * 3 0;
     }
 
     &.coral {
