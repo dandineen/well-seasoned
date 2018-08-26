@@ -5,8 +5,8 @@ SITE HEADER
 // Wrapper for the site header element
 .header-wrapper {
     background-color: white;
-    max-height: 8em;
     left: 0;
+    max-height: 8em;
     position: fixed;
     top: 0;
     width: 100%;
@@ -17,40 +17,40 @@ SITE HEADER
 }
 
 .site-header {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     background: white;
-    width: calc(100% - (40px * 2));
-    padding: $v-space 40px $v-space / 2;
-    max-width: calc(#{$max-site-width} - (40px * 2));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
+    max-width: calc(#{$max-site-width} - ((#{$h-space} * 2.5) * 2));
+    padding: $v-space $h-space * 2.5 $v-space / 2;
+    width: calc(100% - ((#{$h-space} * 2.5) * 2));
 
     // IE10 Flexbox fallbacks
-    display: flexbox;
-    -ms-flex-pack: center;
     -ms-flex-align: center;
+    -ms-flex-pack: center;
+    display: flexbox;
 
     @media #{$medium-up}{
-        padding: $v-space 40px;
+        padding: $v-space $h-space * 2.5;
     }
 
     // Karyx - Site name
     h1.site-name {
+        display: inline-block;
         font-family: $headings;
-        text-transform: uppercase;
+        font-size: 1.25em;
         font-weight: 400;
         letter-spacing: 3px;
-        font-size: 1.25em;
         line-height: 1;
         margin: 0 0 $v-space / 2;
-        display: inline-block;
+        text-transform: uppercase;
 
         a {
+            border: 0;
             color: black;
             text-decoration: none;
-            border: 0;
 
             &:hover {
                 color: $coral;
@@ -67,11 +67,11 @@ SITE HEADER
     h2.site-sub-name {
         font-family: $headings;
         font-size: 0.75em;
-        line-height: 1;
         font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1;
         margin: 0 0 $v-space;
         text-transform: uppercase;
-        letter-spacing: 1px;
 
         @media #{$medium-up} {
             font-size: 0.875em;
