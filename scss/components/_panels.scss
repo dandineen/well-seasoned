@@ -5,11 +5,18 @@ PANELS - Boxouts for priority information
 // Base panel styling
 .panel {
     background-color: white;
-    padding: 1em 2em;
+    padding: .5em 2em;
     border-left: .5em solid $ocean;
-    margin-bottom: $v-space * 2;
+    margin: $v-space * 2 0;
 
     @media #{$medium-up}{
         border-left-width: 1em;
     }
+}
+
+// Simple panel
+.panel--simple {
+    border: 2px solid rgba($ocean, .2);
+    padding: 0 2em .5em;
+    margin: $v-space * 2 0; 
 }
