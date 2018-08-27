@@ -4,89 +4,89 @@ SITE HEADER
 
 // Wrapper for the site header element
 .header-wrapper {
-    background-color: white;
-    left: 0;
-    max-height: 8em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    @media #{$medium-up}{
-        max-height: 6em;
-    }
+  background-color: white;
+  left: 0;
+  max-height: 8em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+  @media #{$medium-up}{
+    max-height: 6em;
+  }
 }
 
 .site-header {
-    align-items: center;
-    background: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    max-width: calc(#{$max-site-width} - ((#{$h-space} * 2.5) * 2));
-    padding: $v-space $h-space * 2.5 $v-space / 2;
-    width: calc(100% - ((#{$h-space} * 2.5) * 2));
-
-    // IE10 Flexbox fallbacks
-    -ms-flex-align: center;
-    -ms-flex-pack: center;
-    display: flexbox;
-
-    @media #{$medium-up}{
-        padding: $v-space $h-space * 2.5;
+  align-items: center;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: calc(#{$max-site-width} - ((#{$h-space} * 2.5) * 2));
+  padding: $v-space $h-space * 2.5 $v-space / 2;
+  width: calc(100% - ((#{$h-space} * 2.5) * 2));
+  
+  // IE10 Flexbox fallbacks
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  display: flexbox;
+  
+  @media #{$medium-up}{
+    padding: $v-space $h-space * 2.5;
+  }
+  
+  // Karyx - Site name
+  h1.site-name {
+    display: inline-block;
+    font-family: $headings;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin: 0 0 $v-space / 2;
+    text-transform: uppercase;
+    
+    a {
+      border: 0;
+      color: black;
+      text-decoration: none;
+      
+      &:hover {
+        color: $coral;
+      }
     }
-
-    // Karyx - Site name
-    h1.site-name {
-        display: inline-block;
-        font-family: $headings;
-        font-size: 1.25em;
-        font-weight: 400;
-        letter-spacing: 3px;
-        line-height: 1;
-        margin: 0 0 $v-space / 2;
-        text-transform: uppercase;
-
-        a {
-            border: 0;
-            color: black;
-            text-decoration: none;
-
-            &:hover {
-                color: $coral;
-            }
-        }
-
-        @media #{$medium-up} {
-            font-size: 1.5em;
-            line-height: 1;
-        }
+    
+    @media #{$medium-up} {
+      font-size: 1.5em;
+      line-height: 1;
     }
-
-    // Sub-name
-    h2.site-sub-name {
-        font-family: $headings;
-        font-size: 0.75em;
-        font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 1;
-        margin: 0 0 $v-space;
-        text-transform: uppercase;
-
-        @media #{$medium-up} {
-            font-size: 0.875em;
-            line-height: 1;
-            margin: 0;
-        }
+  }
+  
+  // Sub-name
+  h2.site-sub-name {
+    font-family: $headings;
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 0 0 $v-space;
+    text-transform: uppercase;
+    
+    @media #{$medium-up} {
+      font-size: 0.875em;
+      line-height: 1;
+      margin: 0;
     }
+  }
 }
 
 .header-info {
-    width: 100%;
-    text-align: center;
-
-    @media #{$medium-up} {
-        width: 50%;
-        text-align: left;
-    }
+  width: 100%;
+  text-align: center;
+  
+  @media #{$medium-up} {
+    width: 50%;
+    text-align: left;
+  }
 }

@@ -42,99 +42,99 @@ $headings: 'Open Sans', sans-serif;
 
 // Body font
 body {
-    font-family: $bodycopy;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
+  font-family: $bodycopy;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 // Paragraphs
 p {
-    margin: 0 0 $v-space;
+  margin: 0 0 $v-space;
 }
 
 // Strong emphasis
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 // STANDARD HEADINGS
 
 h1 {
-    color: $coral;
-    font-family: $headings;
-    margin-top: 0;
+  color: $coral;
+  font-family: $headings;
+  margin-top: 0;
 }
 
 h2 {
-    font-size: 1.25em;
-    font-style: italic;
-    font-weight: normal;
-    margin: $v-space 0 $v-space / 2;
-
-    @media #{$medium-up}{
-        font-size: 1.5em;
-    }
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: normal;
+  margin: $v-space 0 $v-space / 2;
+  
+  @media #{$medium-up}{
+    font-size: 1.5em;
+  }
 }
 
 h3 {
-    font-size: 1em;
-    font-weight: 300;
-    margin: 1em 0;
-    text-transform: uppercase;
-
-    @media #{$medium-up} {
-        font-size: 1.25em;
-    }
+  font-size: 1em;
+  font-weight: 300;
+  margin: 1em 0;
+  text-transform: uppercase;
+  
+  @media #{$medium-up} {
+    font-size: 1.25em;
+  }
 }
 
 h4 {
-    font-family: $headings;
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 1.5;
-    margin: $v-space * 1.5 0 $v-space / 2;
-
-    @media #{$medium-up} {
-        font-size: 1.125em;
-    }
+  font-family: $headings;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: $v-space * 1.5 0 $v-space / 2;
+  
+  @media #{$medium-up} {
+    font-size: 1.125em;
+  }
 }
 
 // SPECIAL HEADINGS
 
 // Page header
 .splash-header {
-    color: white;
-    // font-family: $bodycopy;
-    font-weight: 300;
-    font-size: 1.5em;
-    line-height: 1.5;
-    letter-spacing: 1px;
-
+  color: white;
+  // font-family: $bodycopy;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  
+  @media #{$medium-up} {
+    font-size: 2em;
+  }
+  
+  // The focus heading
+  span {
+    font-size: 1.25em;
+    // font-family: $headings;
+    display: block;
+    color: $coral;
+    margin-bottom: $v-space / 2;
+    
     @media #{$medium-up} {
-        font-size: 2em;
+      font-size: 1.5em;
     }
-
-    // The focus heading
-    span {
-        font-size: 1.25em;
-        // font-family: $headings;
-        display: block;
-        color: $coral;
-        margin-bottom: $v-space / 2;
-
-        @media #{$medium-up} {
-            font-size: 1.5em;
-        }
-    }
+  }
 }
 
 // Styling for portfolio achievment headings
 .achievement::before {
-    content: "+";
-    color: $coral;
-    padding: 0 .5em;
-    margin-left: -1.5em;
+  content: "+";
+  color: $coral;
+  padding: 0 .5em;
+  margin-left: -1.5em;
 }
 
 // TYPOGRAPHIC COMBOS
@@ -142,18 +142,18 @@ h4 {
 // Italicise the first paragraph after an H1 or HR
 h1 + p,
 hr + p {
-    font-style: italic;
+  font-style: italic;
 }
 
 // Space out sub-headings
 p + h3 {
-    margin-top: $v-space * 1.5;
-
-    @media #{$medium-up} {
-        margin-top: $v-space * 3;
-    }
+  margin-top: $v-space * 1.5;
+  
+  @media #{$medium-up} {
+    margin-top: $v-space * 3;
+  }
 }
 
 .mini-hr + p {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
