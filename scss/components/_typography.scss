@@ -37,7 +37,6 @@ Zilla Slab
 
 $bodycopy: 'Zilla Slab', sans-serif;
 $headings: 'Open Sans', sans-serif;
-// $base-font-size: 18px;
 
 // TYPOGRAPHIC DEFAULTS
 
@@ -68,17 +67,24 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6875em;
+    font-size: 1.25em;
+    font-style: italic;
     font-weight: normal;
+    margin: $v-space 0 $v-space / 2;
+
+    @media #{$medium-up}{
+        font-size: 1.5em;
+    }
 }
 
 h3 {
     font-size: 1em;
-    line-height: 1.5;
+    font-weight: 300;
+    margin: 1em 0;
+    text-transform: uppercase;
 
     @media #{$medium-up} {
-        font-size: 1.5em;
-        line-height: 2;
+        font-size: 1.25em;
     }
 }
 
@@ -87,7 +93,7 @@ h4 {
     font-size: 1em;
     font-weight: 700;
     line-height: 1.5;
-    margin: auto 0 $v-space / 2;
+    margin: $v-space * 1.5 0 $v-space / 2;
 
     @media #{$medium-up} {
         font-size: 1.125em;
@@ -98,7 +104,8 @@ h4 {
 
 // Page header
 .splash-header {
-    color: black;
+    color: white;
+    // font-family: $bodycopy;
     font-weight: 300;
     font-size: 1.5em;
     line-height: 1.5;
@@ -106,17 +113,14 @@ h4 {
 
     @media #{$medium-up} {
         font-size: 2em;
-        line-height: 1.5;
     }
 
     // The focus heading
     span {
-        font-size: 1.5em;
-        line-height: 1.2;
+        font-size: 1.25em;
+        // font-family: $headings;
         display: block;
         color: $coral;
-        text-transform: uppercase;
-        font-weight: 800;
         margin-bottom: $v-space / 2;
 
         @media #{$medium-up} {
@@ -129,8 +133,8 @@ h4 {
 .achievement::before {
     content: "+";
     color: $coral;
-    padding: 0 10px;
-    margin-left: -30px;
+    padding: 0 .5em;
+    margin-left: -1.5em;
 }
 
 // TYPOGRAPHIC COMBOS
@@ -148,4 +152,8 @@ p + h3 {
     @media #{$medium-up} {
         margin-top: $v-space * 3;
     }
+}
+
+.mini-hr + p {
+    font-size: 1.25em;
 }

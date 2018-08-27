@@ -6,8 +6,8 @@ STRUCTURE - Grid, layout and structural elements
 // 2018 - Dan Dineen
 
 // Spacing
-$v-space: 1.125em;
-$h-space: 1.125em;
+$v-space: 1em;
+$h-space: 1em;
 
 // BREAKPOINTS
 // Mobile
@@ -39,20 +39,16 @@ $max-site-width: 1200px;
 // ELEMENT RULES
 
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
 }
 
 // Body classes
 .home {
     background-color: rgba($fresh, .1);
-}
-
-.about {
-    background: url(../images/about-bg.svg) no-repeat top center;
 }
 
 .work {
@@ -63,58 +59,61 @@ body {
     background-color: rgba($ocean, .1);
 }
 
-// DEFAULT STRUCTURE
+
+// BASIC STRUCTURE
 
 main {
-    padding: 160px 40px;
-    height: 100%;
     display: flex;
-    margin: 0 auto;
-    width: calc(100% - (40px * 2));
     flex-wrap: wrap;
-    justify-content: center;
     flex: 1;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10em 0 2.5em;
+    width: 100%;
 
     // IE10 Flexbox fallbacks
     display: flexbox;
     -ms-flex-pack: justify;
 
     @media #{$medium-up} {
-        padding: 120px 40px;
-        max-width: calc(#{$max-site-width} - (40px * 2));
+        padding: 8em 0 2em;
     }
 }
 
 // GRID STRUCTURE
 
-// Thirds (33%) width column
-.third {
-    width: 100%;
+// // 1/3 width column
+// .third {
+//     padding: 0 40px;
+//     width: 100%;
 
-    @media #{$medium-up} {
-        width: 33%;
-    }
-}
+//     @media #{$medium-up} {
+//         width: 33%;
+//     }
+// }
 
-//  Fifty percent (50%) width column
-.half {
-    width: 100%;
+// // 1/2 width column
+// .half {
+//     padding: 0 40px;
+//     width: 100%;
 
-    @media #{$medium-up} {
-        width: 50%;
-    }
-}
+//     @media #{$medium-up} {
+//         width: 50%;
+//     }
+// }
 
-// Two-thirds width column
+// 2/3 column - Centered
 .two-thirds {
+    padding: 0 $h-space * 2.5;
     width: 100%;
 
-    @media #{$medium-up} {
-        width: 84%;
+    @media #{$medium-only} {
+        width: 90%;
     }
 
     @media #{$large-up} {
-        width: 68%;
+        width: 50%;
     }
 }
 
@@ -123,14 +122,30 @@ main {
     width: 100%;
 }
 
+// A test class to see what we get from this
+.page-title {
+    display: flex;
+    background-color: black;
+    padding: 2em 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    color: white;
+
+    // IE10 Flexbox fallbacks
+    display: flexbox;
+    -ms-flex-pack: justify;
+}
+
 // Horizontal rules
 .mini-hr {
-    border: 4px solid black;
+    border: .25em solid black;
     width: 10%;
     margin: $v-space * 2 0;
 
     @media #{$medium-up} {
-        margin: $v-space * 4 0;
+        border-width: .5em;
+        margin: $v-space * 3 0;
     }
 
     &.coral {
@@ -144,10 +159,4 @@ main {
     &.ocean {
         border-color: $ocean;
     }
-}
-
-.micro-hr {
-    border: 2px dotted black;
-    width: 10%;
-    margin: $v-space * 2 0 $v-space;
 }
