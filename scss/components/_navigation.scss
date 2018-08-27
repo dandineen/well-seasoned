@@ -3,41 +3,41 @@ NAVIGATION
 ---------------------------------------------------------------- */
 
 nav {
-    width: 100%;
-    text-align: center;
-
-    @media #{$medium-up} {
-        width: 50%;
-        text-align: right;
-    }
+  width: 100%;
+  text-align: center;
+  
+  @media #{$medium-up} {
+    width: 50%;
+    text-align: right;
+  }
 }
 
 .global-nav {
-    margin: 0;
+  margin: 0;
 }
 
 // Zero lists in nav items
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .global-nav li {
-    display: inline-block;
-    margin: 0 10px;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 40px;
-    
-    &::before {
-        content: "/";
-        color: rgba(0, 0, 0, .2);
-        padding-right: 5px; 
-    }
-
-    @media #{medium-up}{
-        line-height: auto;
-    }
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  
+  &::before {
+    content: "/";
+    color: rgba(0, 0, 0, .2);
+    padding-right: 5px; 
+  }
+  
+  @media #{medium-up}{
+    line-height: auto;
+  }
 }

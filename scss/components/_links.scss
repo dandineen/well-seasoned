@@ -4,72 +4,72 @@ LINKS
 
 // NAVIGATION LINKS
 nav a {
-    font-style: normal;
-    position: relative;
+  font-style: normal;
+  position: relative;
+  border: 0;
+  
+  &:link {
+    text-decoration: none;
+    color: $coral;
     border: 0;
-
-    &:link {
-        text-decoration: none;
-        color: $coral;
-        border: 0;
-    }
-
-    // Build on the underlines from the left
-    // TODO: I'd like to set them to build on from the center once we're on smaller screens
+  }
+  
+  // Build on the underlines from the left
+  // TODO: I'd like to set them to build on from the center once we're on smaller screens
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transform-origin: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  &:visited {
+    color: black;
+  }
+  
+  &:hover,
+  &:active,
+  &:focus {
+    color: black;
+    
     &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: -3px;
-        left: 0;
-        background-color: #000;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        transform-origin: 0;
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
     }
-
-    &:visited {
-        color: black;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-        color: black;
-
-        &:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
-    }
-
-    // Active navigation link
-    &.active {
-        color: $coral;
-    }
+  }
+  
+  // Active navigation link
+  &.active {
+    color: $coral;
+  }
 }
 
 // DEFAULT LINKS
 main a {
-    font-style: italic;
-    text-decoration: none;
-    border-bottom: 1px dotted black;
-    transition: color 0.3s ease, border-bottom-color 0.3s ease;
-
-    &:link,
-    &:visited {
-        color: black;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-        color: $coral;
-        border-bottom-color: $coral;
-    }
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  
+  &:link,
+  &:visited {
+    color: black;
+  }
+  
+  &:hover,
+  &:active,
+  &:focus {
+    color: $coral;
+    border-bottom-color: $coral;
+  }
 }
