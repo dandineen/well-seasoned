@@ -154,6 +154,7 @@ p + h3 {
   }
 }
 
+// First paragraph after a mini horizontal rule
 .mini-hr + p {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
