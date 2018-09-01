@@ -1,0 +1,83 @@
+/* ----------------------------------------------------------------
+PORTFOLIO - Portfolio entries 
+---------------------------------------------------------------- */
+
+.key-work {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+}
+
+.flex-wrapper {
+  display: flex;
+  padding: 0 $h-space * 2.5;
+  width: 100%;
+  flex-wrap: wrap;
+  
+  @media #{$medium-only} {
+    width: 90%;
+  }
+  
+  @media #{$large-up} {
+    width: 50%;
+  }
+}
+
+.portfolio {
+  max-width: 100%;
+  height: 240px; // We can sort this out later
+  background-color: white;
+  flex: 1 0 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+
+  @media #{$medium-up} {
+    flex-basis: 50%;
+    max-width: 50%; // Make the portfolio image a maximum of 1/4 the screen
+  }
+
+  h1 {
+    font-size: 1.25em;
+    line-height: 1;
+    font-family: $condensed;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  a {
+
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+
+  &:hover {
+    background-color: $coral;
+  }
+}
+
+.entry-title {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.client {
+  font-size: 0.8em;
+  color: white;
+  // font-style: italic;
+}
+
+// Background images
+
+
