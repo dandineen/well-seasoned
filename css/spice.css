@@ -581,6 +581,13 @@ PORTFOLIO - Portfolio entries
   width: 100%;
   background-color: white;
   justify-content: center;
+  padding: 1em 0;
+}
+
+@media (min-width: 641px) {
+  .key-work {
+    padding: 0;
+  }
 }
 
 .flex-wrapper {
@@ -604,10 +611,10 @@ PORTFOLIO - Portfolio entries
 
 .portfolio {
   max-width: 100%;
-  height: 240px;
+  height: 15em;
   background-color: white;
   flex: 1 0 100%;
-  margin: 0;
+  margin: 1em 0;
   padding: 0;
   text-align: center;
   position: relative;
@@ -616,6 +623,7 @@ PORTFOLIO - Portfolio entries
 @media (min-width: 641px) {
   .portfolio {
     flex-basis: 50%;
+    margin: 0;
     max-width: 50%;
   }
 }
@@ -623,20 +631,24 @@ PORTFOLIO - Portfolio entries
 .portfolio h1 {
   font-size: 1.25em;
   line-height: 1;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   color: white;
   font-weight: normal;
   margin-bottom: 0;
 }
 
+.portfolio a {
+  font-style: normal;
+}
+
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.overlay:hover {
+.overlay:visited, .overlay:hover, .overlay:active, .overlay:focus {
   background-color: #e41b1b;
 }
 
@@ -651,6 +663,30 @@ PORTFOLIO - Portfolio entries
 .client {
   font-size: 0.8em;
   color: white;
+}
+
+.origins {
+  background-image: url("../assets/images/portfolio/origins-original.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.application {
+  background-image: url("../assets/images/portfolio/application-original.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.lens {
+  background-image: url("../assets/images/portfolio/lens-original.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.typecase {
+  background-image: url("../assets/images/portfolio/typecase-original.png");
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=maps/spice.css.map */

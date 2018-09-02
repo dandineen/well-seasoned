@@ -7,6 +7,11 @@ PORTFOLIO - Portfolio entries
   width: 100%;
   background-color: white;
   justify-content: center;
+  padding: 1em 0;
+
+  @media #{$medium-up} {
+    padding: 0;
+  }
 }
 
 .flex-wrapper {
@@ -26,23 +31,25 @@ PORTFOLIO - Portfolio entries
 
 .portfolio {
   max-width: 100%;
-  height: 240px; // We can sort this out later
+  height: 15em;
   background-color: white;
   flex: 1 0 100%;
-  margin: 0;
+  margin: 1em 0;
   padding: 0;
+  // padding-top: 56.25%; /* 16:9 Aspect Ratio */
   text-align: center;
   position: relative;
 
   @media #{$medium-up} {
     flex-basis: 50%;
+    margin: 0;
     max-width: 50%; // Make the portfolio image a maximum of 1/4 the screen
   }
 
   h1 {
     font-size: 1.25em;
     line-height: 1;
-    font-family: $condensed;
+    font-family: $headings;
     text-transform: uppercase;
     color: white;
     font-weight: normal;
@@ -50,17 +57,21 @@ PORTFOLIO - Portfolio entries
   }
 
   a {
-
+    font-style: normal;
   }
 }
 
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.8);
 
-  &:hover {
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
     background-color: $coral;
+    // box-shadow:inset 0px 0px 0px 10px white;
   }
 }
 
@@ -75,9 +86,31 @@ PORTFOLIO - Portfolio entries
 .client {
   font-size: 0.8em;
   color: white;
-  // font-style: italic;
 }
 
 // Background images
+.origins {
+  background-image: url('../assets/images/portfolio/origins-original.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.application {
+  background-image: url('../assets/images/portfolio/application-original.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.lens {
+  background-image: url('../assets/images/portfolio/lens-original.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.typecase {
+  background-image: url('../assets/images/portfolio/typecase-original.png');
+  background-position: center;
+  background-size: cover;
+}
 
 
