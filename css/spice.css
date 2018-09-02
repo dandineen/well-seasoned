@@ -392,6 +392,14 @@ SITE HEADER
 }
 
 /* ----------------------------------------------------------------
+IMAGES - Screengrabs and image examples 
+---------------------------------------------------------------- */
+img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/* ----------------------------------------------------------------
 LINKS
 ---------------------------------------------------------------- */
 nav a {
@@ -454,6 +462,7 @@ main a:link, main a:visited {
 main a:hover, main a:active, main a:focus {
   color: #e41b1b;
   border-bottom-color: #e41b1b;
+  border-bottom-style: solid;
 }
 
 /* ----------------------------------------------------------------
@@ -577,65 +586,60 @@ PANELS - Boxouts for priority information
 PORTFOLIO - Portfolio entries 
 ---------------------------------------------------------------- */
 .key-work {
-  display: flex;
-  width: 100%;
   background-color: white;
+  display: flex;
   justify-content: center;
   padding: 1em 0;
-}
-
-@media (min-width: 641px) {
-  .key-work {
-    padding: 0;
-  }
+  width: 100%;
 }
 
 .flex-wrapper {
   display: flex;
-  padding: 0 2.5em;
-  width: 100%;
   flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
 }
 
 @media (min-width: 641px) and (max-width: 1000px) {
   .flex-wrapper {
-    width: 90%;
+    width: calc(90% + 2em);
   }
 }
 
 @media (min-width: 1001px) {
   .flex-wrapper {
-    width: 50%;
+    width: calc(50% + 2em);
   }
 }
 
 .portfolio {
-  max-width: 100%;
-  height: 15em;
   background-color: white;
   flex: 1 0 100%;
-  margin: 1em 0;
+  height: 10em;
+  margin: 1em 2em;
+  max-width: calc(100% - 4em);
   padding: 0;
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 
 @media (min-width: 641px) {
   .portfolio {
     flex-basis: 50%;
-    margin: 0;
-    max-width: 50%;
+    height: 15em;
+    margin: 1em;
+    max-width: calc(50% - 2em);
   }
 }
 
 .portfolio h1 {
-  font-size: 1.25em;
-  line-height: 1;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
   color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
   font-weight: normal;
+  line-height: 1.25;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .portfolio a {
@@ -643,9 +647,9 @@ PORTFOLIO - Portfolio entries
 }
 
 .overlay {
-  width: 100%;
+  background-color: black;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
 }
 
 .overlay:visited, .overlay:hover, .overlay:active, .overlay:focus {
@@ -654,39 +658,17 @@ PORTFOLIO - Portfolio entries
 
 .entry-title {
   display: block;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .client {
-  font-size: 0.8em;
   color: white;
-}
-
-.origins {
-  background-image: url("../assets/images/portfolio/origins-original.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.application {
-  background-image: url("../assets/images/portfolio/application-original.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.lens {
-  background-image: url("../assets/images/portfolio/lens-original.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.typecase {
-  background-image: url("../assets/images/portfolio/typecase-original.png");
-  background-position: center;
-  background-size: cover;
+  font-size: 0.8em;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=maps/spice.css.map */

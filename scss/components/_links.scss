@@ -71,5 +71,6 @@ main a {
   &:focus {
     color: $coral;
     border-bottom-color: $coral;
+    border-bottom-style: solid;
   }
 }
