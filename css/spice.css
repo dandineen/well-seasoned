@@ -224,12 +224,14 @@ hr + p {
   font-style: italic;
 }
 
-p + h3 {
+p + h3,
+article + h3 {
   margin-top: 1.5em;
 }
 
 @media (min-width: 641px) {
-  p + h3 {
+  p + h3,
+  article + h3 {
     margin-top: 3em;
   }
 }

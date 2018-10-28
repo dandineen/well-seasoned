@@ -138,7 +138,8 @@ hr + p {
 }
 
 // Space out sub-headings
-p + h3 {
+p + h3,
+article + h3 {
   margin-top: $v-space * 1.5;
   
   @media #{$medium-up} {
