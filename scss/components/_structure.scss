@@ -36,6 +36,9 @@ $large-up: "(min-width: #{$large-lower})";
 // Maximum site width
 $max-site-width: 1200px;
 
+// Max value - Use for z-index, pushing things off-screen etc.
+$max-value: 9999;
+
 // ELEMENT RULES
 
 body {

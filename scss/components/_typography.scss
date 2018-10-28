@@ -37,6 +37,7 @@ Zilla Slab
 
 $bodycopy: 'Zilla Slab', sans-serif;
 $headings: 'Open Sans', sans-serif;
+$condensed: 'Open Sans Condensed', sans-serif;
 
 // TYPOGRAPHIC DEFAULTS
 
@@ -79,13 +80,9 @@ h2 {
 
 h3 {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 600;
   margin: 1em 0;
   text-transform: uppercase;
-  
-  @media #{$medium-up} {
-    font-size: 1.25em;
-  }
 }
 
 h4 {
@@ -94,10 +91,6 @@ h4 {
   font-weight: 700;
   line-height: 1.5;
   margin: $v-space * 1.5 0 $v-space / 2;
-  
-  @media #{$medium-up} {
-    font-size: 1.125em;
-  }
 }
 
 // SPECIAL HEADINGS
@@ -118,7 +111,6 @@ h4 {
   // The focus heading
   span {
     font-size: 1.25em;
-    // font-family: $headings;
     display: block;
     color: $coral;
     margin-bottom: $v-space / 2;
@@ -154,6 +146,7 @@ p + h3 {
   }
 }
 
+// First paragraph after a mini horizontal rule
 .mini-hr + p {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }

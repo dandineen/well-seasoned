@@ -10,6 +10,7 @@ SITE HEADER
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: $max-value;
   
   @media #{$medium-up}{
     max-height: 6em;
