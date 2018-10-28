@@ -584,6 +584,12 @@ PANELS - Boxouts for priority information
   margin: 2em 0;
 }
 
+.panel--outline {
+  background-color: white;
+  border: 2px solid #54cbf2;
+  padding: 1em 2em;
+}
+
 /* ----------------------------------------------------------------
 PORTFOLIO - Portfolio entries 
 ---------------------------------------------------------------- */
