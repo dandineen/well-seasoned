@@ -20,3 +20,10 @@ PANELS - Boxouts for priority information
   padding: 0 2em .5em;
   margin: $v-space * 2 0; 
 }
+
+// Outline panel
+.panel--outline {
+  background-color: white;
+  border: 2px solid $ocean;
+  padding: 1em 2em;
+}
