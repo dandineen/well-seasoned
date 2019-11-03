@@ -14,6 +14,12 @@ PANELS - Boxouts for priority information
   }
 }
 
+// Panels for the rewind pages
+.panel-rewind {
+  @extend .panel;
+  border-color: $hay; // Different border colour for rewind content
+}
+
 // Simple panel
 .panel--simple {
   border: 2px solid rgba($ocean, .2);
@@ -26,4 +32,18 @@ PANELS - Boxouts for priority information
   background-color: white;
   border: 2px solid $ocean;
   padding: 1em 2em;
+}
+
+// Rewind panel outline
+.panel-rewind--outline {
+  @extend .panel--outline;
+  border-color: $hay;
+}
+
+// Boxouts
+
+.boxout {
+  padding: 1em 2em;
+  margin: $v-space * 2 0;
+  background-color: rgba($hay, .2);
 }

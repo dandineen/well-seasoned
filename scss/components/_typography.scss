@@ -79,10 +79,11 @@ h2 {
 }
 
 h3 {
+  font-family: $headings;
   font-size: 1em;
   font-weight: 600;
-  margin: 1em 0;
-  text-transform: uppercase;
+  margin: 1em 0 .5em;
+  // text-transform: uppercase;
 }
 
 h4 {
@@ -143,11 +144,22 @@ article + h3 {
   margin-top: $v-space * 1.5;
   
   @media #{$medium-up} {
-    margin-top: $v-space * 3;
+    margin-top: $v-space * 2;
   }
 }
 
 // First paragraph after a mini horizontal rule
 .mini-hr + p {
   font-size: 1.5em;
+}
+
+// Punch up the current year
+.current-year {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+
+  & + p {
+    font-style: italic;
+  }
 }

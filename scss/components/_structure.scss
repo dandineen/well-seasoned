@@ -96,15 +96,15 @@ main {
   //     }
   // }
   
-  // // 1/2 width column
-  // .half {
-    //     padding: 0 40px;
-    //     width: 100%;
-    
-    //     @media #{$medium-up} {
-      //         width: 50%;
-      //     }
-      // }
+// 1/2 width column
+// .half {
+//   padding: 0 40px;
+//   width: 100%;
+
+//   @media #{$medium-up} {
+//     width: 50%;
+//   }
+// }
         
 // 2/3 column - Centered
 .two-thirds {
@@ -163,4 +163,29 @@ main {
     border-color: $ocean;
   }
 }
-        
+
+// Basic Flexbox layout for two columns
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  // 50% columns
+  .half {
+    width: 100%;
+    padding: 0;
+
+    @media #{$medium-up} {
+      width: calc(50% - 2em);
+      margin: 0;
+      padding: 0;
+      
+      &:first-of-type {
+        margin-right: $h-space * 2;
+      }
+  
+      &:last-of-type {
+        margin-left: $h-space * 2;
+      }
+    }
+  }
+}
