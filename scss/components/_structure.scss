@@ -108,7 +108,7 @@ main {
         
 // 2/3 column - Centered
 .two-thirds {
-  padding: 0 $h-space * 2.5;
+  padding: 0 $h-space * 2.5 $v-space;
   width: 100%;
   
   @media #{$medium-only} {

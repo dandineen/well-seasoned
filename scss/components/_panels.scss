@@ -47,3 +47,7 @@ PANELS - Boxouts for priority information
   margin: $v-space * 2 0;
   background-color: rgba($hay, .2);
 }
+
+.half .boxout {
+  margin-top: 0;
+}

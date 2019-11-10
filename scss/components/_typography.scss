@@ -163,3 +163,11 @@ article + h3 {
     font-style: italic;
   }
 }
+
+.boxout h1 {
+  font-family: $headings;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0 .5em;
+  color: black;
+}

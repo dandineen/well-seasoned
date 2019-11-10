@@ -47,7 +47,7 @@ main {
 }
 
 .two-thirds {
-  padding: 0 2.5em;
+  padding: 0 2.5em 1em;
   width: 100%;
 }
 
@@ -272,6 +272,14 @@ article + h3 {
 
 .current-year + p {
   font-style: italic;
+}
+
+.boxout h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0 .5em;
+  color: black;
 }
 
 /* ----------------------------------------------------------------
@@ -643,6 +651,10 @@ PANELS - Boxouts for priority information
   padding: 1em 2em;
   margin: 2em 0;
   background-color: rgba(212, 194, 78, 0.2);
+}
+
+.half .boxout {
+  margin-top: 0;
 }
 
 /* ----------------------------------------------------------------
